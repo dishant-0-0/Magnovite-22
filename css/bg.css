@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    height: 100%; 
+    overflow: hidden;
+}
+div{
+    display: block;
+
+}
+.frame_div{
+    position: absolute;
+    height: 100%;
+    width:100%;;
+   
+}
+.frame_event{
+    height: 100%;
+    width: 100%;
+   
+}
+.frame{
+    position: absolute;
+    height: 100%;
+    width:1600px;
+}
+.main{
+    position: absolute;
+   
+    z-index: 1;
+    height:100%;
+    width: 100%;
+    color: white;
+
+}
+.events{
+    font-size: 70px;
+    text-align: center;
+    font-family: monospace;
+    text-shadow: blueviolet;
+}
+@media screen and (max-width:678px) {
+    .frame {
+      width:100%;
+    }
+   #nav-text1{
+        display:none;
+      }
+    
+  @media screen and (max-width:1024px) {
+    .frame {
+      width:100%;
+    }   
+  }
+}
