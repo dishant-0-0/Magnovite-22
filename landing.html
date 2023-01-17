@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Magnovite 2022</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Christites">  
+ 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/new_gallery.css">
+  <link rel="stylesheet" href="css/snow_background.css"> 
+  <link rel="icon" type="image/png" href="images/logo_shadow.png" />
+</head>
+
+<body> 
+  <!-- scipt for snow background -->
+  <script>
+    for (var i =0;i<50;i++){
+      var iDiv = document.createElement('div');
+      iDiv.className = 'snow';  
+      document.getElementsByTagName('body')[0].appendChild(iDiv);
+    }
+  </script>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal-gallery">
+    <span class="close-gallery">&times;</span>
+    <img class="modal-gallery-content" id="img-gallery">
+
+    <div id="caption-gallery"></div>
+    <a class="prev-gallery" onclick="changeimg(-1)">&#10094;</a>
+    <a class="next-gallery" onclick="changeimg(+1)">&#10095;</a>
+  </div>
+
+  <div class="perspective effect-rotate-left" id="main-body">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="index.html">
+              <img src="images/logo.png" class="ch" alt="ChristLogo">
+            </a>
+            <div class="reg">
+              <a target="_blank" href="https://forms.gle/m1iYKU7SNGWEY5oG6"
+                style="text-decoration: none; color: white;">
+                <button class="header--cta">Register Now - Foreign Students</button>
+              </a>&nbsp;&nbsp;&nbsp;
+              <a target="_blank" href="https://forms.gle/33ygj27TxSMudwzX6"
+                style="text-decoration: none; color: white;">
+                <button class="header--cta">Register Now - Indian students</button>
+              </a>
+            </div>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav dos-font">
+              <li class="is-active" id="custom-s-1"><span></span></li>
+              <li id="custom-s-2"><span></span></li>
+              <li id="custom-s-3"><span></span></li>
+              <li id="custom-s-4"><span></span></li>
+              <li id="custom-s-5"><span></span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <img class="mag-custom-logo" src="images/text_logo.png" />
+                  <h1 style="font-size: 40px; margin-top: 9px; margin-bottom: 20px;">22-23 April 2022</h1>
+                  <div class="mobile-only-intro">
+                    <p class="intro-text-mobile">
+                      CHRIST (Deemed to be University), Kengeri Campus, is proud to bring to you the greatest international competitive experience
+                      you will ever have with Magnovite 2022. This will be first-ever hybrid (online as well as on campus) edition!
+                    </p>
+                  </div>
+                  <a target="_blank" href="https://forms.gle/m1iYKU7SNGWEY5oG6"
+                    style="text-decoration: none; color: black;">
+                    <button> Register Now - Foreign Students
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                        style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                        </g>
+                      </svg>
+                      <span class="btn-background"></span>
+                    </button>
+                    <a><br><br>
+                      <a target="_blank" href="https://forms.gle/33ygj27TxSMudwzX6"
+                        style="text-decoration: none; color: black;">
+                        <button> Register Now - INDIAN STUDENTS
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                            style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                            <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                              <path
+                                d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                            </g>
+                          </svg>
+                          <span class="btn-background"></span>
+                        </button>
+                        <a><br><br>
+                          <a target="_blank"
+                            href="docs/Magnovite2022Brochure.pdf"
+                            style="text-decoration: none; color: black;">
+                            <button> Download brochure&nbsp;
+                              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                                style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                  <path
+                                    d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                </g>
+                              </svg>
+                              <span class="btn-background"></span>
+                            </button>
+                            <a><br><br>
+                              <a target="_blank"
+                                href="docs/Magnovite2022Rulebook.pdf"
+                                style="text-decoration: none; color: black;">
+                                <button> Download Rulebook
+                                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                                    style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                      <path
+                                        d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                    </g>
+                                  </svg>
+                                  <span class="btn-background"></span>
+                                </button>
+                                <a>
+                                  <img class="magn banner-img" src="images/logo_prize.png" style="height: auto;"
+                                    alt="magnovite">
+                </div>
+                <div class="about_mag-container" id="counters_1">
+                  <div class="abt" style="color: white; font-family: Arial, Helvetica, sans-serif;">
+                    <h2 style="font-size: 30px;margin-bottom: -13px;font-family: 'AveriaLibre';">ABOUT <span> MAGNOVITE:
+                      </span></h2>
+                    <p class="intro-text">
+                      CHRIST (Deemed to be University), Kengeri Campus, is proud to bring to you the greatest international competitive experience
+                      you will ever have with Magnovite 2022. This will be first-ever hybrid (online as well as on campus) edition!
+                    </p>
+                  </div>
+                  <div class="counter_container">
+                    <div class="counter-sub-container">
+                      <div class="counter-box">
+                        <div class="counter c_0">30+</div>
+                      </div><br>
+                      <div class="counter-title">
+                        <span>EVENTS</span>
+                      </div>
+                    </div>
+                    <div class="counter-sub-container">
+                      <div class="counter-box">
+                        <div class="counter c_1">100+</div>
+                      </div><br>
+                      <div class="counter-title">
+                        <span>COLLEGES</span>
+                      </div>
+                    </div>
+                    <div class="counter-sub-container">
+                      <div class="counter-box">
+                        <div class="counter c_2">1800+</div>
+                      </div><br>
+                      <div class="counter-title">
+                        <span>PARTICIPANTS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timer">
+                  <ul>
+                    <li class="cli"><span id="days"></span></li>
+                    <li class="cli"><span id="hours"></span></li>
+                    <li class="cli"><span id="minutes"></span></li>
+                    <li class="cli sec"><span id="seconds"></span></li>
+                  </ul>
+                </div>
+                <div id="arrow_events" onclick="$('#custom-s-2').click();">EVENTS ▼</div>  
+              </div>
+
+            <li class="l-section section outg" id="1">
+              <div class="work">
+                <h1>Events</h1>
+                <div class="work--lockup">
+                  <!-- Events Cards -->
+                  <section class="cards">
+                    <div class="card card--1">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="bgtech.html" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+
+                        <h2 class="card__title">Technical Events</h2>
+                        <span class="card__category"> School of Engineering and Technology</span>
+
+                      </div>
+                    </div>
+
+                    <div class="card card--2">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="bgmanage.html" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                        <h2 class="card__title">Managerial Events</h2>
+                        <span class="card__category"> School of Business and Management</span>
+                      </div>
+                    </div>
+
+                    <div class="card card--3">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="bgdesign.html" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                        <h2 class="card__title">Design Events</h2>
+                        <span class="card__category"> School of Architecture</span>
+                      </div>
+                    </div>
+
+                    <div class="card card--4">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="bgpsych.html" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                        <h2 class="card__title">Psychology Events</h2>
+                        <span class="card__category"> School of Social Science</span>
+                      </div>
+                    </div>
+
+                    <div class="card card--5 card-mobile">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="bgcultural.html" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                        <h2 class="card__title">Cultural Events</h2>
+                      </div>
+                    </div>
+                  </section>
+
+                </div>
+                <div class="land-card card--5 card-dektop" style="z-index: 1">
+                  <div class="card__info-hover">
+                    <div class="card__clock-info">
+                      <span class="card__time">See More</span>
+                    </div>
+
+                  </div>
+                  <div class="card__img" style="height: 98px;"></div>
+                  <a href="bgcultural.html" class="card_link">
+                    <div class="card__img--hover" style="height: 100%;"></div>
+                  </a>
+                  <div class="card__info" style="position: relative; background:none;">
+                    <h2 class="card__title" style="font-size: 40px;">Cultural Events</h2>
+                  </div>
+                </div>
+                <div id="arrow_gallery" onclick="$('#custom-s-3').click();">GALLERY ▼</div>
+              </div>
+            </li>
+            <li class="l-section section" id="galleryli">
+
+              <div class="gallery">
+                <h2>Gallery</h2>
+
+                <!-- Photo Grid -->
+                <div style="height:72vh">
+                  <div class="row-gallery" style="overflow: auto; height: 100%;">
+                    <div class="column-gallery">
+                      <img class="img-gallery images" src="images\img.jpeg" style="width:100%" alt="img" loading="lazy"
+                        onclick="imgclick(0)">
+                      <img class="img-gallery images" src="images\img17.jpg" style="width:100%" alt="img17"
+                        loading="lazy" onclick="imgclick(1)">
+                      <img class="img-gallery images" src="images\img2.jpg" style="width:100%" alt="img2" loading="lazy"
+                        onclick="imgclick(2)">
+                      <img class="img-gallery images" src="images\img11.jpeg" style="width:100%" alt="img11"
+                        loading="lazy" onclick="imgclick(3)">
+                      <img class="img-gallery images" src="images\img4.jpg" style="width:100%" alt="img4" loading="lazy"
+                        onclick="imgclick(4)">
+                    </div>
+                    <div class="column-gallery">
+                      <img class="img-gallery images" src="images\img20.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(5)">
+                      <img class="img-gallery images" src="images\img6.jpeg" style="width:100%" loading="lazy"
+                        onclick="imgclick(6)">
+                      <img class="img-gallery images" src="images\img7.jpeg" style="width:100%" loading="lazy"
+                        onclick="imgclick(7)">
+                      <img class="img-gallery images" src="images\img10.jpeg" style="width:100%" loading="lazy"
+                        onclick="imgclick(8)">
+                      <img class="img-gallery images" src="images\img9.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(9)">
+
+                    </div>
+                    <div class="column-gallery">
+                      <img class="img-gallery images" src="images\img8.jpeg" style="width:100%" loading="lazy"
+                        onclick="imgclick(10)">
+                      <img class="img-gallery images" src="images\img13.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(11)">
+                      <img class="img-gallery images" src="images\img12.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(12)">
+                      <img class="img-gallery images" src="images\img3.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(13)">
+                      <img class="img-gallery images" src="images\img14.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(14)">
+                    </div>
+                    <div class="column-gallery">
+                      <img class="img-gallery images" src="images\img21.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(15)">
+                      <img class="img-gallery images" src="images\img16.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(16)">
+                      <img class="img-gallery images" src="images\img1.jpeg" style="width:100%" loading="lazy"
+                        onclick="imgclick(17)">
+                      <img class="img-gallery images" src="images\img18.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(18)">
+                      <img class="img-gallery images" src="images\img19.jpg" style="width:100%" loading="lazy"
+                        onclick="imgclick(19)">
+                    </div>
+                  </div>
+                </div>
+                <div id="arrow_aboutus" onclick="$('#custom-s-4').click();">ABOUT US ▼</div>
+              </div>
+            </li>
+            <li class="l-section section" id="2">
+              <div class="about">
+                <div class="about--banner">
+                  <h2>About<br><span>Kengeri Campus</span></h2>
+                  <p>Established in the Mysore Road with finest ambiance of greenery and world-class infrastructure,
+                    far from the hustle-bustle of the city, Kengeri Campus provides the experience of the traditional
+                    world-class campus with department-specific buildings, libraries, research facilities and
+                    residences.
+                    Kengeri Campus brings the academic and technology community together to develop transformative
+                    ideas and pioneering leaders in technologies for this digital era.</p>
+                  <a target="_blank"
+                    href="https://christuniversity.in/faculty-of-engineering/computer-science-and-engineering/festivals/magnovite">ABOUT
+                    CHRIST
+                    <span>
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                        style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="about--options">
+                  <a target="_blank"
+                    href="https://christuniversity.in/academics/Bangalore-Kengeri-Campus/school-of-engineering-and-technology">
+                    <h3>School of Engineering and Technology</h3>
+                  </a>
+                  <a target="_blank"
+                    href="https://christuniversity.in/departments/bangalore%20kengeri%20campus/school%20of%20architecture/school%20of%20architecture">
+                    <h3>School of Architecture</h3>
+                  </a>
+                  <a target="_blank"
+                    href="https://christuniversity.in/academics/Main-Campus/school-of-business-and-management">
+                    <h3>School of Business and Management</h3>
+                  </a>
+                  <a target="_blank" href="https://christuniversity.in/academics/Main-Campus/school-of-social-sciences">
+                    <h3>School of Social Sciences</h3>
+                  </a>
+                </div>
+                <div id="arrow_contactus" onclick="$('#custom-s-5').click();">CONTACT US ▼</div>
+              </div>
+            </li>
+            <li class="l-section section" id="3">
+              <div class="contact">
+                <div class="contact--lockup">
+                  <h1 id="contact-heading">CONTACT US</h1>
+                  <iframe id="contact-iframe" src="contactus.html" frameBorder="0"></iframe>
+                  <!-- Dev List PC-->
+                  <input class="triggerButton" type="button" value="</>">
+                  <div class="dev-list">
+                    <h2 style="margin:0; padding:0;">Developers</h2>
+                    <table style="width:100%">
+                      <tr>
+                        <td>Manjot Singh Sidhu</td>
+                        <td>Siddharth Patel</td>
+                        <td>Shrey Limbani</td>
+                        <td>Prabhnoor Singh</td>
+                      </tr>
+                      <tr>
+                        <td>Chris Peter</td>
+                        <td>Pritam Saha</td>
+                        <td>Kesaria Sachin</td>
+                        <td>Avneet Dekatey</td>
+                      </tr>
+                      <tr>
+                        <td>Dishant Patel</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!-- Dev List PC-->
+                  <!-- Dev List Mobiles-->
+                  <div id="dev-list-mobile">
+                    <h2 style="margin:0; padding:0;">Developers</h2>
+                    <table style="width:100%">
+                      <tr>
+                        <td>Manjot Singh Sidhu</td>
+                      </tr>
+                      <tr>
+                        <td>Siddharth Patel</td>
+                      </tr>
+                      <tr>
+                        <td>Shrey Limbani</td>
+                      </tr>
+                      <tr>
+                        <td>Prabhnoor Singh</td>
+                      </tr>
+                      <tr>
+                        <td>Chris Peter</td>
+                      </tr>
+                      <tr>
+                        <td>Pritam Saha</td>
+                      </tr>
+                      <tr>
+                        <td>Kesaria Sachin</td>
+                      </tr>
+                      <tr>
+                        <td>Avneet Dekatey</td>
+                      </tr>
+                      <tr>
+                        <td>Dishant Patel</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!-- Dev List Mobiles-->
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">Home</li>
+      <li>Events</li>
+      <li>Gallery</li>
+      <li>About Us</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+
+  
+
+  <script src="js/timer.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="js/functions-min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {      
+
+      // For Intro Text
+      var words = ["CHRIST (Deemed to be University), Kengeri Campus, is proud to bring to you the greatest international competitive experience you will ever have with Magnovite 2022. This will be first-ever hybrid (online as well as on campus) edition!",
+        "Encompassing over 10 Technical events, 10 Management events, 4 Architecture events, 4 Psychology events, and 5 Cultural events, Magnovite aims to push all boundaries by presenting a multi-disciplinary approach to innovation and fun!",
+        'Since its inception back in 2012, Magnovite has been known to push all boundaries. Having started with just engineering and cultural events, we have grown to include events from Management, Architecture and Psychology!',
+        'We have a rich inclusive history that offers something for everyone, come be a part of Magnovite!'];
+      var intro_desktop_index = 0; // i for counting
+      var intro_mobile_index = 0;
+
+      setInterval(function () {
+        $('.intro-text').fadeOut(function () { //fadeout text
+          $(this).html(words[intro_desktop_index = (intro_desktop_index + 1) % words.length]).fadeIn(); //update, count and fadeIn
+        });
+      }, 7000);
+
+      setInterval(function () {
+        $('.intro-text-mobile').fadeOut(function () { //fadeout text
+          $(this).html(words[intro_mobile_index = (intro_mobile_index + 1) % words.length]).fadeIn(); //update, count and fadeIn
+        });
+      }, 7000);
+
+      // For Events
+      jQuery(function ($) {
+        $('.cards').on('scroll', function (e) {
+          var elem = $(e.currentTarget);
+          if ($(this).scrollTop() == 0) {
+            $('#custom-s-1').click();
+          } else if (elem[0].scrollHeight - elem.scrollTop() == elem.outerHeight()) {
+            $('#custom-s-3').click();
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var imgarr = document.getElementsByClassName("images");
+    var modalImg = document.getElementById("img-gallery");
+    var captionText = document.getElementById("caption-gallery");
+    var imgid;
+    function imgclick(imgnum) {
+      imgid = imgnum;
+      modal.style.display = "block";
+      modalImg.src = imgarr[imgnum].src;
+
+    }
+    function changeimg(num) {
+      modal.style.display = "block";
+      if ((imgid + num) >= imgarr.length) {imgid = -1;}
+      if ((imgid + num) < 0) {imgid = imgarr.length}
+      modalImg.src = imgarr[imgid + num].src;
+      imgid = imgid + num;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close-gallery")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+  <script>
+    
+    /* ---- stats.js config ---- */
+
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function () {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3JPZEX4E1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W3JPZEX4E1');
+  </script>
+</body>
+
+</html>
